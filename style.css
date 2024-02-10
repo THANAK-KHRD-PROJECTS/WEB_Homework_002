@@ -41,6 +41,9 @@ body{
     position: relative;
     top: 4px;
 }
+.logo_hrd:hover{
+    cursor: pointer;
+}
 
 .container{
     width: 1000px;
@@ -67,6 +70,7 @@ th{
 .text{
     color: white;
     margin-left: 5px;
+    z-index: 2;
 }
 
 .table1 tr th{
@@ -205,7 +209,7 @@ hr{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: ease-in 0.3s;
+
 } 
 #table3_th2{
     background: url(images/Ben-10-Desktop-Wallpaper.jpg);
@@ -234,6 +238,7 @@ hr{
     text-align: center;
     font-weight: bold;
     font-size: 30px;
+    color: white;
 }
 .table3 tr th{
     z-index: 1;
@@ -248,34 +253,53 @@ hr{
 
 #table3_th1:hover{
     background-color: rgba(0, 0,0,0.3);
-    transition: 0.2s ease;
+    transition: bottom 0.2s ;
     background-blend-mode: darken;
+}
+
+.overlay{
+    background-color: rgba(0, 0,0,0.3);
+background-blend-mode: darken;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s ease;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
 }
 
 .overlay1{
     background-color: rgba(0, 0,0,0.3);
     position: absolute;
-    right: 0;
+    right: 100%;
+    left: 0;
     bottom: 0;
-    top: 0;
-    transition: 0.2s ease-in;
-    width: 100%;
-    height: 0;
-    background-blend-mode: darken;
-
+    transition: 0.4s ease;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.5;
 
 }
 
-
 .table3 tr th:hover .overlay {
+    opacity: 0.3;
+
     height: 100%;
     bottom: 0;
 }
 .table3 tr th:hover .overlay1 {
-    height: 100%;
-    left: 0;
+    width: 100%;
+    opacity: 0.3;
+
 }
 
+.text{
+    opacity: 1;
+}
 
 
 footer{
@@ -307,7 +331,6 @@ iframe{
     border: 1px solid black;
 }
 .contact_us{
-
     padding: 0px 20px;
     text-align: justify;
     float: right;
