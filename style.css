@@ -4,7 +4,10 @@ body{
     background-color: #63a942c2;
     font-family: 'Honk', system-ui;    box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}
 .navbar{
     text-transform: capitalize;
     font-weight: bold;
@@ -205,21 +208,23 @@ hr{
 
 
 #table3_th1{
-    background: url(images/benten_hero3.jpg);
+    background: url(images/nature.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
 } 
+
+
 #table3_th2{
-    background: url(images/Ben-10-Desktop-Wallpaper.jpg);
+    background: url(images/mountain.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: ease-in 0.3s;
 } 
 #table3_th3{
-    background: url(images/Ben-10-Desktop-Wallpaper.jpg);
+    background: url(images/ocean.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -293,12 +298,14 @@ background-blend-mode: darken;
 }
 .table3 tr th:hover .overlay1 {
     width: 100%;
-    opacity: 0.3;
+    opacity: 0.2;
 
 }
 
-.text{
+.text3{
     opacity: 1;
+    color: white;
+    text-align: center;
 }
 
 
@@ -321,7 +328,7 @@ h1{
 
 iframe{
     margin: 0 auto;
-    height: 450px;
+    height: 400px;
     width: 500px;
 }
 
@@ -336,8 +343,6 @@ iframe{
     float: right;
     width: 420px;
 }
-
-
 
 .message{
     list-style-image: url(icons/email.png);
